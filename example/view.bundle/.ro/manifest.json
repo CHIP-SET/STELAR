@@ -1,1 +1,26 @@
-{}
+{
+  "@context": ["https://w3id.org/bundle/context"],
+  "id": "/",
+  "manifest": "manifest.json",
+  "createdOn": "2014-08-14T15:24:00+0100",
+  "createdBy": {
+    "orcid": "http://orcid.org/0000-0001-9842-9718",
+    "name": "Stian Soiland-Reyes"
+  },
+  "authoredBy": {
+    "orcid": "http://orcid.org/0000-0001-9842-9718",
+    "name": "Stian Soiland-Reyes"
+  },
+  "aggregates": [
+    { "uri": "/a",
+      "mediatype": ""
+    },
+    { "uri": "/b",
+    },
+  ],
+  "annotations": [
+    { "about": "/a"
+      "content": "annotations/a.txt"
+    }
+  ]
+}
