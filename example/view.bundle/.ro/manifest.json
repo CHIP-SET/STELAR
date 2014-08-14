@@ -16,13 +16,25 @@
   "aggregates": [
     { "uri": "/original.csv",
       "mediatype": "text/csv",
-      "pav:retrievedFrom": { "uri": "http://elab.example.com/original/152"}
-      
+      "pav:retrievedFrom": { "uri": "http://elab.example.com/original/152"},
+      "createdBy": {
+        "uri": "http://elab.example.com/user/195",
+        "name": "Ursula Uploader"
+      },
+      "authoredBy": {
+        "name": "Ricky Researcher"
+      }
     },
     { "uri": "/processed.csv",
+      "mediatype": "text/csv",
       "conformsTo": "http://elab.example.com/vocabulary/2014-08-14",
       "pav:retrievedFrom": { "uri": "http://elab.example.com/processed/581"},
-      "mediatype": "text/csv"
+      "createdBy": {
+        "uri": "http://elab.example.com/user/201",
+        "name": "Pete Processor"
+      },
+      "pav:importedFrom": { "uri": "/original.csv" },
+      "pav:createdWith": { "uri": "/archetype.csv" }
     },
     { "uri": "/archetype.csv",
       "conformsTo": "http://elab.example.com/vocabulary/2014-08-14",
