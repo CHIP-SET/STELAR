@@ -1,5 +1,7 @@
 {
-  "@context": ["https://w3id.org/bundle/context"],
+  "@context": [
+    "https://w3id.org/bundle/context"
+    ],
   "id": "/",
   "manifest": "manifest.json",
   "createdOn": "2014-08-14T15:24:00+0100",
@@ -12,14 +14,31 @@
     "name": "Stian Soiland-Reyes"
   },
   "aggregates": [
-    { "uri": "/a",
-      "mediatype": ""
+    { "uri": "/original.csv",
+      "mediatype": "text/csv",
+      "pav:retrievedFrom": { "uri": "http://elab.example.com/original/152"}
+      
     },
-    { "uri": "/b",
+    { "uri": "/processed.csv",
+      "conformsTo": "http://elab.example.com/vocabulary/2014-08-14",
+      "pav:retrievedFrom": { "uri": "http://elab.example.com/processed/581"},
+      "mediatype": "text/csv"
     },
+    { "uri": "/archetype.csv",
+      "conformsTo": "http://elab.example.com/vocabulary/2014-08-14",
+      "pav:retrievedFrom": { "uri": "http://elab.example.com/archetypes/15"},
+      "mediatype": "text/csv"
+    },
+    { "uri": "http://elab.example.com/vocabulary/0.5.3",
+      "pav:previousVersion": { "uri": "http://elab.example.com/vocabulary/0.5.2"} 
+    },
+    { "uri": "/vocabulary.csv",
+      "mediatype": "text/csv",
+      "pav:retrievedFrom": { "uri": "http://elab.example.com/vocabulary/0.5.3"}
+    }    
   ],
   "annotations": [
-    { "about": "/a"
+    { "about": "/a",
       "content": "annotations/a.txt"
     }
   ]
