@@ -1,6 +1,6 @@
 {
-  "@context": ["https://w3id.org/bundle/context"],
-  "id": "/",
+    "@context": ["https://w3id.org/bundle/context"],
+    "id": "/",
   "manifest": "manifest.json",
   "createdOn": "2014-08-14T15:24:00+0100",
   "createdBy": {
